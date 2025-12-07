@@ -12,6 +12,8 @@
 
 ---
 
+[![PayPal Donate Button](https://hungaryvfr.hu/images/paypal-donate-button-2.png)](https://www.paypal.com/ncp/payment/KUM7TUZW4CNPN)
+
 ## ✨ Features
 
 ### 🧭 POI-Based Navigation
