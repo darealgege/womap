@@ -79,13 +79,12 @@
    cd womap
    ```
 
-2. **Configure API keys** (optional)
+2. **Configure API keys**
    
-   Create or edit `config.php` for any API integrations:
-   ```php
-   <?php
-   // OpenWeather API (optional - for weather features)
-   define('OPENWEATHER_API_KEY', 'your_key_here');
+   Create `.env` for API integrations:
+   ```
+   OPENAI_API_KEY=your_openai_key
+   OPENROUTE_API_KEY=your_openroute_key
    ```
 
 3. **Serve the application**
