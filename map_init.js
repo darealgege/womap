@@ -517,31 +517,28 @@ document.getElementById('ctxSaveBookmark').addEventListener('click', function ()
 document.getElementById('ctxStreetView').addEventListener('click', function () {
     contextMenu.style.display = 'none';
     hideContextMenuPin();
-    
-    // Google Maps Embed API - tiszta Street View nézet (nincs címdoboz)
-    var streetViewEmbedUrl = 'https://www.google.com/maps/embed/v1/streetview?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&location=' + contextMenuLat + ',' + contextMenuLon + '&heading=0&pitch=0&fov=90';
-    
+
     // Fallback: régi módszer ha nincs API kulcs
     var fallbackUrl = 'https://www.google.com/maps?layer=c&cbll=' + contextMenuLat + ',' + contextMenuLon + '&cbp=12,0,0,0,0&output=svembed&z=18';
-    
+
     // Külső link
     var externalUrl = 'https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + contextMenuLat + ',' + contextMenuLon;
-    
+
     // Modal elemek
     var modal = document.getElementById('streetViewModal');
     var frame = document.getElementById('streetViewFrame');
     var externalLink = document.getElementById('streetViewExternalLink');
-    
+
     // Használjuk a fallback URL-t (nem igényel API kulcsot)
     frame.src = fallbackUrl;
     externalLink.href = externalUrl;
-    
+
     // Modal megjelenítése
     modal.style.display = 'block';
 });
 
 // Street View Modal bezárás
-document.getElementById('streetViewModal').querySelector('.close-modal').addEventListener('click', function() {
+document.getElementById('streetViewModal').querySelector('.close-modal').addEventListener('click', function () {
     var modal = document.getElementById('streetViewModal');
     var frame = document.getElementById('streetViewFrame');
     modal.style.display = 'none';
@@ -549,7 +546,7 @@ document.getElementById('streetViewModal').querySelector('.close-modal').addEven
 });
 
 // Modal bezárás kattintásra a háttérre
-document.getElementById('streetViewModal').addEventListener('click', function(e) {
+document.getElementById('streetViewModal').addEventListener('click', function (e) {
     if (e.target === this) {
         var frame = document.getElementById('streetViewFrame');
         this.style.display = 'none';
