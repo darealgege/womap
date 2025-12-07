@@ -81,7 +81,7 @@
 
 2. **Configure API keys**
    
-   Create `.env` for API integrations:
+   Create `.env` for API integrations (OpenAI used for phrasing navigation steps):
    ```
    OPENAI_API_KEY=your_openai_key
    OPENROUTE_API_KEY=your_openroute_key
