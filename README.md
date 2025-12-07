@@ -1,7 +1,7 @@
 # 🗺️ WoMap - Women-Oriented Navigation
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.5-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-0.7-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
   <img src="https://img.shields.io/badge/platform-web-lightgrey.svg" alt="Platform">
 </p>
